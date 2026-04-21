@@ -21,4 +21,4 @@ jobs:
             -H "Authorization: Bearer $SUPABASE_SERVICE_ROLE_KEY" \
             -H "Accept: application/json" \
             "$SUPABASE_URL/rest/v1/keepalive?select=id&limit=1" \
-            > /dev/null
+            > /dev/null && echo "Supabase responded OK"
