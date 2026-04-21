@@ -22,4 +22,3 @@ jobs:
             -H "Accept: application/json" \
             "$SUPABASE_URL/rest/v1/keepalive?select=id&limit=1" \
             > /dev/null
-``
